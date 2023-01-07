@@ -80,11 +80,11 @@ public class FederationApplication {
         return "actual";
     }
 
-    @GetMapping("/actual/{name}")
-    public String onePage(@PathVariable("name") String name,
+    @GetMapping("/actual/{id}")
+    public String onePage(@PathVariable("id") long id,
                           //@PathVariable(value = "name", required =false) String name,
                           Model model){
-        List<News> news = newsRepo.findByName(name);
+        News news = newsRepo.findById(id);
         model.addAttribute("news",news);
         return "OnePage";
     }

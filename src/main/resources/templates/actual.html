@@ -20,7 +20,7 @@
     <td th:text="${news.name}">Onions</td>
     <td th:text="${news.info}">2.41</td>
     <td><img th:src="@{'/img/'+ ${news.filename}}" alt="Photo"></td>
-    <td><a th:href="@{'/actual/'+${news.getName()}}">читать</a></td>
+    <td><a th:href="@{'/actual/'+${news.getId()}}">читать</a></td>
 
   </tr>
 </table>
