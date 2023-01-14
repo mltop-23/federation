@@ -28,7 +28,7 @@ public class FederationApplication {
     //Скачивание календаря
     @GetMapping("/downloadpdf")
     public void  downloadPdf (HttpServletResponse response ) throws IOException{
-        File file= new File("files\\cal.pdf");
+        File file= new File("/Users/maksimmalysev/IdeaProjects/federation/src/main/resources/templates/cal.pdf");
         response.setContentType("application/octet-stream");
         String headerKey = "Content-Disposition";
         String headerValue = "attachment; filename =" + file.getName();

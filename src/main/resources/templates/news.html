@@ -24,7 +24,7 @@
     <tr th:each="news : ${news}">
         <td th:text="${news.name}">Onions</td>
         <td th:text="${news.info}">2.41</td>
-        <td><img th:src="@{'/img/'+ ${news.filename}}" alt="Photo"></td>
+        <td><img th:src="@{'../img/'+ ${news.filename}}" alt="Photo"></td>
         <td><form th:action="@{'/news/delete/'+${news.id}}" method="post"><button>Удалить</button></form></td>
 
     </tr>
