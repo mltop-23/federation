@@ -1,8 +1,7 @@
 package com.example.federation.security;
 
 import io.jsonwebtoken.*;
-import jakarta.annotation.PostConstruct;
-import jakarta.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -13,6 +12,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Component;
 
 
+import javax.annotation.PostConstruct;
+import javax.servlet.http.HttpServletRequest;
 import java.util.Base64;
 import java.util.Date;
 

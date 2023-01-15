@@ -1,10 +1,11 @@
 package com.example.federation.domain;
 
 
-import jakarta.persistence.*;
+
 import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity // This tells Hibernate to make a table out of this class
